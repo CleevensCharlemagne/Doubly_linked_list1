@@ -224,3 +224,17 @@ bool insertAfter(int key, int newKey, int data) {
          current = current->next;
       }
    }
+
+   //create a link
+   struct node *newLink = (struct node*) malloc(sizeof(struct node));
+   newLink->key = newKey;
+   newLink->data = data;
+
+   if(current == last) {
+      newLink->next = NULL;
+      last = newLink;
+   } else {
+      newLink->next = current->next;
+      current->next->prev = newLink;
+   }
+
