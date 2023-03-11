@@ -61,6 +61,14 @@ void displayBackward() {
    //navigate till the start of the list
    printf("\n[ ");
 
+   while(ptr != NULL) {
 
+      //print data
+      printf("(%d,%d) ",ptr->key,ptr->data);
+
+      //move to next item
+      ptr = ptr ->prev;
+
+   }
 
 }
