@@ -185,3 +185,21 @@ struct node* delete(int key) {
       }
    }
 
+  //found a match, update the link
+   if(current == head) {
+      //change first to point to next link
+      head = head->next;
+   } else {
+      //bypass the current link
+      current->prev->next = current->next;
+   }
+
+   if(current == last) {
+      //change last to point to prev link
+      last = current->prev;
+   } else {
+      current->next->prev = current->prev;
+   }
+
+   return current;
+}
