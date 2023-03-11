@@ -137,3 +137,23 @@ struct node* deleteFirst() {
    //return the deleted link
    return tempLink;
 }
+
+//delete link at the last location
+
+struct node* deleteLast() {
+   //save reference to last link
+   struct node *tempLink = last;
+
+   //if only one link
+   if(head->next == NULL) {
+      head = NULL;
+   } else {
+      last->prev->next = NULL;
+   }
+
+   last = last->prev;
+
+   //return the deleted link
+   return tempLink;
+}
+
