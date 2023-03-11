@@ -16,3 +16,10 @@ struct node *head = NULL;
 
 //this link always point to last Link
 struct node *last = NULL;
+
+struct node *current = NULL;
+
+//is list empty
+bool isEmpty() {
+   return head == NULL;
+}
