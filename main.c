@@ -238,3 +238,8 @@ bool insertAfter(int key, int newKey, int data) {
       current->next->prev = newLink;
    }
 
+   newLink->prev = current;
+   current->next = newLink;
+   return true;
+}
+
