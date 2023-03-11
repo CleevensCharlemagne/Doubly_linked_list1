@@ -82,5 +82,13 @@ void insertFirst(int key, int data) {
    link->key = key;
    link->data = data;
 
+   if(isEmpty()) {
+      //make it the last link
+      last = link;
+   } else {
+      //update first prev link
+      head->prev = link;
+   }
+
 
 }
