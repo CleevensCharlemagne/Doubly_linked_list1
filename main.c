@@ -243,3 +243,34 @@ bool insertAfter(int key, int newKey, int data) {
    return true;
 }
 
+void main() {
+   insertFirst(1,10);
+   insertFirst(2,20);
+   insertFirst(3,30);
+   insertFirst(4,1);
+   insertFirst(5,40);
+   insertFirst(6,56);
+
+   printf("\nList (First to Last): ");
+   displayForward();
+
+   printf("\n");
+   printf("\nList (Last to first): ");
+   displayBackward();
+
+   printf("\nList , after deleting first record: ");
+   deleteFirst();
+   displayForward();
+
+   printf("\nList , after deleting last record: ");
+   deleteLast();
+   displayForward();
+
+   printf("\nList , insert after key(4) : ");
+   insertAfter(4,7, 13);
+   displayForward();
+
+   printf("\nList  , after delete key(4) : ");
+   delete(4);
+   displayForward();
+}
