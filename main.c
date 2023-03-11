@@ -157,3 +157,31 @@ struct node* deleteLast() {
    return tempLink;
 }
 
+//delete a link with given key
+
+struct node* delete(int key) {
+
+   //start from the first link
+   struct node* current = head;
+   struct node* previous = NULL;
+
+   //if list is empty
+   if(head == NULL) {
+      return NULL;
+   }
+
+   //navigate through list
+   while(current->key != key) {
+      //if it is last node
+
+      if(current->next == NULL) {
+         return NULL;
+      } else {
+         //store reference to current link
+         previous = current;
+
+         //move to next link
+         current = current->next;
+      }
+   }
+
