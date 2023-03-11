@@ -96,3 +96,15 @@ void insertFirst(int key, int data) {
    //point first to new first link
    head = link;
 }
+
+//insert link at the last location
+void insertLast(int key, int data) {
+
+   //create a link
+   struct node *link = (struct node*) malloc(sizeof(struct node));
+   link->key = key;
+   link->data = data;
+
+
+}
+
