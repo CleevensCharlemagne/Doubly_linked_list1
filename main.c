@@ -120,3 +120,13 @@ void insertLast(int key, int data) {
    last = link;
 }
 
+//delete first item
+struct node* deleteFirst() {
+
+   //save reference to first link
+   struct node *tempLink = head;
+
+
+   //return the deleted link
+   return tempLink;
+}
