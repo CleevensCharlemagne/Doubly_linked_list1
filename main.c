@@ -23,3 +23,12 @@ struct node *current = NULL;
 bool isEmpty() {
    return head == NULL;
 }
+
+int length() {
+   int length = 0;
+   struct node *current;
+
+
+
+   return length;
+}
