@@ -52,3 +52,15 @@ void displayForward() {
    printf(" ]");
 }
 
+//display the list from last to first
+void displayBackward() {
+
+   //start from the last
+   struct node *ptr = last;
+
+   //navigate till the start of the list
+   printf("\n[ ");
+
+
+
+}
