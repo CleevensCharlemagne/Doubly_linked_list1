@@ -44,7 +44,10 @@ void displayForward() {
    //navigate till the end of the list
    printf("\n[ ");
 
-
+   while(ptr != NULL) {
+      printf("(%d,%d) ",ptr->key,ptr->data);
+      ptr = ptr->next;
+   }
 
    printf(" ]");
 }
