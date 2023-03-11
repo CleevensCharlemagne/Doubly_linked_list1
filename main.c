@@ -90,5 +90,9 @@ void insertFirst(int key, int data) {
       head->prev = link;
    }
 
+   //point it to old first link
+   link->next = head;
 
+   //point first to new first link
+   head = link;
 }
