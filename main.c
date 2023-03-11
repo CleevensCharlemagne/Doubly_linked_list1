@@ -203,3 +203,24 @@ struct node* delete(int key) {
 
    return current;
 }
+
+bool insertAfter(int key, int newKey, int data) {
+   //start from the first link
+   struct node *current = head;
+
+   //if list is empty
+   if(head == NULL) {
+      return false;
+   }
+
+   //navigate through list
+   while(current->key != key) {
+
+      //if it is last node
+      if(current->next == NULL) {
+         return false;
+      } else {
+         //move to next link
+         current = current->next;
+      }
+   }
