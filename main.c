@@ -34,3 +34,18 @@ int length() {
 
    return length;
 }
+
+//display the list in from first to last
+void displayForward() {
+
+   //start from the beginning
+   struct node *ptr = head;
+
+   //navigate till the end of the list
+   printf("\n[ ");
+
+
+
+   printf(" ]");
+}
+
