@@ -116,6 +116,7 @@ void insertLast(int key, int data) {
       link->prev = last;
    }
 
-
+   //point last to new last node
+   last = link;
 }
 
