@@ -105,6 +105,17 @@ void insertLast(int key, int data) {
    link->key = key;
    link->data = data;
 
+   if(isEmpty()) {
+      //make it the last link
+      last = link;
+   } else {
+      //make link a new last link
+      last->next = link;
+
+      //mark old last node as prev of new link
+      link->prev = last;
+   }
+
 
 }
 
