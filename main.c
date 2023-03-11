@@ -72,3 +72,15 @@ void displayBackward() {
    }
 
 }
+
+
+//insert link at the first location
+void insertFirst(int key, int data) {
+
+   //create a link
+   struct node *link = (struct node*) malloc(sizeof(struct node));
+   link->key = key;
+   link->data = data;
+
+
+}
