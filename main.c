@@ -11,4 +11,7 @@ struct node {
    struct node *prev;
 };
 
+//this link always point to first Link
+struct node *head = NULL;
+
 
